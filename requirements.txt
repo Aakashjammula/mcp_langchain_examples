@@ -1,0 +1,7 @@
+python-dotenv
+mcp[cli]
+langgraph
+langchain-mcp-adapters
+langchain-google-genai
+langchain
+duckduckgo-search
