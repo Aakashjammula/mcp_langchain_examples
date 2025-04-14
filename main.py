@@ -29,8 +29,8 @@ async def main():
 
             # Create and run the agent
             agent = create_react_agent(model, tools, prompt=system_prompt) 
-            input =input("Enter your question: ")
-            inputs= {"messages": [("user", input)]}
+            query =input("Enter your question: ")
+            inputs= {"messages": [("user", query)]}
             # Run the agent with the provided inputs
             response = await agent.ainvoke(inputs)
             final_answer = response['messages'][-1].content  
