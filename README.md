@@ -1,4 +1,3 @@
-
 # MCP LangChain Integration Example
 
 This project serves as a tutorial on integrating Model Control Protocol (MCP) with LangChain to build AI agents. By using a web search tool (DuckDuckGo) as an example, it demonstrates how to configure and orchestrate tools to enhance the agent's capabilities. The concepts and implementation can be extended to integrate other tools and models.
@@ -30,7 +29,7 @@ There are two methods to install the dependencies:
 
 ### Method 1: Using uv (recommended)
 
-bash
+```bash
 # Install uv first if you don't have it
 # For macOS/Linux:
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -41,50 +40,50 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 # Create virtual environment and install dependencies
 uv venv
 uv sync
-
+```
 
 ### Method 2: Using pip
 
-bash
+```bash
 # Create a virtual environment
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-
+```
 
 ## Configuration
 
 1. Create a `.env` file in the project root directory
 2. Add your Google API key:
-   
+   ```
    GOOGLE_API_KEY=your_api_key_here
-   
+   ```
 
 ## Running the Application
 
 ### Start the MCP Server
 First, start the MCP server:
 
-bash
+```bash
 # Using uv
 uv run server.py
 
 # Or using Python directly (after activating virtual environment)
 python server.py
-
+```
 
 ### Run the Main Application
 In a separate terminal:
 
-bash
+```bash
 # Using uv
 uv run main.py
 
 # Or using Python directly (after activating virtual environment)
 python main.py
-
+```
 
 ## How It Works
 
@@ -100,4 +99,3 @@ When you run `main.py`, you'll be prompted to enter a question. The agent will:
 1. Process your question
 2. Use the DuckDuckGo search tool to find relevant information
 3. Format and return an answer based on the search results
-
