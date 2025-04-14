@@ -68,10 +68,10 @@ First, start the MCP server:
 
 ```bash
 # Using uv
-uv run server.py
+uv run .\src\server.py
 
 # Or using Python directly (after activating virtual environment)
-python server.py
+python .\src\server.py
 ```
 
 ### Run the Main Application
@@ -79,10 +79,10 @@ In a separate terminal:
 
 ```bash
 # Using uv
-uv run main.py
+uv run .\src\main.py
 
 # Or using Python directly (after activating virtual environment)
-python main.py
+python .\src\main.py
 ```
 
 ## How It Works

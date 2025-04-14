@@ -13,7 +13,7 @@ model = ChatGoogleGenerativeAI(
 
 server_params = StdioServerParameters(
     command="python",
-    args=["server.py"],
+    args=[r".\src\server.py"],
 )
 
 import asyncio
