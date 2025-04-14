@@ -1,7 +1,7 @@
 
 # MCP LangChain Integration Example
 
-This project demonstrates the integration of Model Control Protocol (MCP) with LangChain and Google's Gemini model to create an AI agent that can search the web using DuckDuckGo.
+This project serves as a tutorial on integrating Model Control Protocol (MCP) with LangChain to build AI agents. By using a web search tool (DuckDuckGo) as an example, it demonstrates how to configure and orchestrate tools to enhance the agent's capabilities. The concepts and implementation can be extended to integrate other tools and models.
 
 ## Overview
 
@@ -11,7 +11,6 @@ The application uses:
 - **Google's Gemini 2.0 Flash**: As the underlying AI model
 - **DuckDuckGo Search**: As an external tool for web searches
 
-The agent is configured to always use web search to answer user questions, ensuring up-to-date information.
 
 ## Project Structure
 
